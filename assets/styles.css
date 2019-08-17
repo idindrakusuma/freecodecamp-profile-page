@@ -14,11 +14,11 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .font-lexend {
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 .app-profile {
@@ -46,7 +46,7 @@ body {
   margin: 16px 0;
 }
 
-#header {
+#navbar {
   width: 260px;
   height: 100vh;
   display: flex;
@@ -61,27 +61,53 @@ body {
   justify-content: center;
 }
 
-#navbar {
+#content-navbar {
   width: 100%;
   display: flex;
   flex-flow: column;
+  position: relative;
 }
 
-#navbar > ul {
+#content-navbar > ul {
   list-style: none;
 }
 
-#navbar > ul > li {
+#content-navbar > ul > li {
   padding: 8px 0;
   text-align: center;
 }
 
-#navbar > ul > li > a {
+.navbar-mobile {
+  display: none !important;
+}
+
+.navbar-desktop {
+  z-index: 9999;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-desktop {
+    display: none !important;
+  }
+
+  .navbar-mobile {
+    display: flex !important;
+    z-index: 9999;
+  }
+}
+
+#content-navbar > ul > li > a {
   text-decoration: none;
   color: var(--white-color-font);
   text-transform: uppercase;
   font-size: 14px;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+#content-navbar > ul > li > a:hover {
+  font-weight: bold;
+  color: #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .title-profile {
@@ -127,4 +153,37 @@ body {
 .full-height {
   min-height: 100vh;
 }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#welcome-section {
+  background-image: url("https://indrakusuma.web.id/web-profile/dist/images/indra-1.JPG");
+  background-size: cover;
+}
+
+.title-welcome {
+  color: #fff;
+  font-size: 2em;
+}
+
+.subtitle-welcome {
+  color: #fff;
+  font-size: 1.4em;
+}
+
+.title-content {
+  font-size: 1.7em;
+  font-family: "Lexend Deca", sans-serif;
+}
+
 

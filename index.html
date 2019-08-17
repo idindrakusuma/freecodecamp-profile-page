@@ -12,13 +12,16 @@
       type="image/x-icon"
     />
     <!-- font -->
-    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Montserrat&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lexend+Deca|Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
   <body>
     <div class="app-profile">
       <div class="wrapper">
-        <header id="header">
+        <nav id="navbar" class="navbar-desktop">
           <!-- should navbar here -->
           <div class="profile-page">
             <img
@@ -29,27 +32,53 @@
             <h1 class="title-profile font-lexend">Indra Kusuma</h1>
             <h3 class="sub-title-profile">Frontend Developer</h3>
           </div>
-          <nav id="navbar">
+          <div id="content-navbar">
             <ul>
-              <li><a href="#welcome">Welcome</a></li>
+              <li><a href="#welcome-section">Welcome</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
-          </nav>
+          </div>
 
           <div class="copyright font-lexend">
-              <p>© <script>document.write(new Date().getFullYear())</script> - Indra Kusuma - FreeCodeCamp</p>
+            <p>
+              ©
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              - Indra Kusuma - FreeCodeCamp
+            </p>
           </div>
-        </header>
+        </nav>
         <div class="main-content">
-          <section id="welcome">
-            <div class="container full-width full-height">
-              <h1>Welcome to Indra Kusuma</h1>
+          <section id="welcome-section">
+            <div class="container full-width full-height overlay flex-center">
+              <h1 class="title-welcome font-lexend">
+                "Dream. Belive. Make it Happen!"
+              </h1>
+              <h3 class="subtitle-welcome">- Indra Kusuma -</h3>
             </div>
           </section>
-          <section id="about" class="full-height">welcome</section>
-          <section id="projects" class="full-height">welcome</section>
+          <section id="about" class="container full-height">
+            <h1 class="title-content">About Me</h1>
+          </section>
+          <section id="projects" class="container">
+            <h1 class="title-content">Projects</h1>
+            <div class="project-tile">
+              <!-- should show image -->
+              <a href="#">Link project</a>
+              <a
+                href="https://github.com/idindrakusuma"
+                id="profile-link"
+                target="_blank"
+                >Link project</a
+              >
+            </div>
+          </section>
+          <section id="projects" class="container">
+            <h1 class="title-content">Contact Me</h1>
+          </section>
         </div>
       </div>
     </div>
