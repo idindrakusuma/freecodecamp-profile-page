@@ -1,26 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Indra Kusuma - FreeCodeCamp</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Indra Kusuma - FreeCodeCamp</title>
 
-  <link rel="stylesheet" href="./assets/styles.css">
-  <link rel="shortcut icon" href="https://user-images.githubusercontent.com/10141928/38850599-58f599aa-423c-11e8-82f8-8ea00ad5a364.png" type="image/x-icon">
-</head>
-<body>
-  <div class="app-profile">
-    <nav id="navbar">
-      <!-- should navbar here -->
-    </nav>
-    <div class="main-content">
-      <section id="welcome-section"> welcome</section>
-      <section id="about"> welcome</section>
-      <section id="projects"> welcome</section>
+    <link
+      rel="shortcut icon"
+      href="https://user-images.githubusercontent.com/10141928/38850599-58f599aa-423c-11e8-82f8-8ea00ad5a364.png"
+      type="image/x-icon"
+    />
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="app-profile">
+      <div class="wrapper">
+        <header id="header">
+          <!-- should navbar here -->
+          <div class="profile-page">
+            <img
+              class="img-profile"
+              src="https://indrakusuma.web.id/web-profile/dist/images/indrakusuma.jpg"
+              alt="indra-kusuma"
+            />
+            <h1 class="title-profile font-lexend">Indra Kusuma</h1>
+            <h3 class="sub-title-profile">Frontend Developer</h3>
+          </div>
+          <nav id="navbar">
+            <ul>
+              <li><a href="#welcome">Welcome</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="copyright font-lexend">
+              <p>© <script>document.write(new Date().getFullYear())</script> - Indra Kusuma - FreeCodeCamp</p>
+          </div>
+        </header>
+        <div class="main-content">
+          <section id="welcome">
+            <div class="container full-width full-height">
+              <h1>Welcome to Indra Kusuma</h1>
+            </div>
+          </section>
+          <section id="about" class="full-height">welcome</section>
+          <section id="projects" class="full-height">welcome</section>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</body>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  </body>
 </html>
