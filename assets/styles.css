@@ -92,7 +92,7 @@ b {
   z-index: 9999;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 725px) {
   .navbar-desktop {
     display: none !important;
   }
@@ -151,6 +151,13 @@ b {
   padding: 36px 24px 0px 24px;
 }
 
+@media only screen and (max-width: 725px) {
+  .main-content {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
 .full-width {
   margin: 0;
   padding: 0;
@@ -181,6 +188,12 @@ b {
 .title-welcome {
   color: #fff;
   font-size: 2em;
+}
+
+@media only screen and (max-width: 450px) {
+  .title-welcome {
+    font-size: 1.2em;
+  }
 }
 
 .subtitle-welcome {
