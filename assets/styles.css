@@ -206,7 +206,7 @@ b {
 }
 
 section > p {
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.7;
   margin: 16px 0;
 }
@@ -247,11 +247,17 @@ section > ul > li {
   color: #555;
   border-radius: 4px;
   font-family: var(--font-lexend);
+  margin-bottom: 24px;
 }
 
 .linkedin-button:hover {
   background: var(--gradient-background);
   color: var(--white-color-font);
+}
+
+#projects {
+  border-top: 2px dotted #555;
+  border-bottom: 2px dotted #555;
 }
 
 .main-projects {
@@ -269,6 +275,32 @@ section > ul > li {
 
 .img-responsive {
   width: 100%;
+}
+
+.mail {
+  background-color: #000;
+  padding: 4px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--white-color-font);
+}
+
+.social-media {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.social-item > a {
+  background-color: #000;
+  padding: 4px 16px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-item > a:hover {
+  background: var(--gradient-background);
+  color: var(--white-color-font);
 }
 
 
